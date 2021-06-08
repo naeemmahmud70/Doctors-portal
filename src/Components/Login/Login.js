@@ -1,13 +1,10 @@
 import React, { useContext } from 'react';
+import groupe from '../../images/Group 140.png'
 import firebase from "firebase/app";
 import "firebase/auth";
 import firebaseConfig from './firebase.config';
 import { UserContext } from '../../App';
 import { useHistory, useLocation } from 'react-router-dom';
-
-
-
-
 
 if (firebase.apps.length === 0) {
     firebase.initializeApp(firebaseConfig);
@@ -53,7 +50,7 @@ const Login = () => {
             </div>
         </div>
         <div className="col-md-6">
-            <img className="img-fluid" src="" alt=""/>
+            <img className="img-fluid" src={groupe} alt=""/>
         </div>
     </div>
     );
