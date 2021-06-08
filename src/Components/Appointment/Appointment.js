@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import AppointmentHeader from '../AppointmentHeader/AppointmentHeader';
+import BookAppointment from '../BookAppointment/BookAppointment';
 import Footer from '../Footer/Footer';
 import Navbar from '../Home/Header/Navbar/Navbar';
 
@@ -13,6 +14,7 @@ const Appointment = () => {
         <div>
             <Navbar></Navbar>
             <AppointmentHeader handleDateChange= {handleDateChange}></AppointmentHeader>
+            <BookAppointment date ={selectedDate}></BookAppointment>
             <Footer></Footer>
         </div>
     );
