@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { faClock, faMapMarker, faPhone } from '@fortawesome/free-solid-svg-icons'
 import InfoCard from '../InfoCard/InfoCard';
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 const BusinessInfo = () => {
+    useEffect(() => {
+        Aos.init({ duration: 1000 });
+    }, [])
     const infosData = [
         {
             title: 'Opening Hours',
@@ -24,7 +29,7 @@ const BusinessInfo = () => {
         }
     ]
     return (
-        <section className="d-flex justify-content-center">
+        <section data-aos="fade-right" className="d-flex justify-content-center">
         <div className="w-75 row">
             {
                 infosData.map(info => <InfoCard info={info} key={info.title}></InfoCard>)

@@ -46,7 +46,7 @@ const Login = () => {
                 <label htmlFor="" className="text-danger">Forgot your password?</label>
             </div>
             <div className="from-group mt-5">
-                <button onClick={handleGoogleSignIn} className="btn-style" >Google Sign in</button>
+                <button onClick={handleGoogleSignIn} className="btn btn-brand" >Google Sign in</button>
             </div>
         </div>
         <div className="col-md-6">
